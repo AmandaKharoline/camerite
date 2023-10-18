@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+   
+}
+
+button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+svg{
+    width: 100%;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*HEADER*/
+header{
+    width: 100%;
+}
+
+.navegar{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid #817a7a35;
+}
+
+/*ICONES DO NAV BAR*/
+
+.navegar .icones{
+    display: flex;
+}
+.navegar .icones .insta-icon img{
+    width: 25px;
+    height: 25px;
+    margin-left: 700px;
+}
+
+.navegar .icones .face-icon img{
+    width: 25px;
+    height: 25px;
+}
+
+.navegar .icones{
+    gap:14px;
+}
+
+/*ANIMAÇÃO NOS ICONES DO NAV BAR*/
+.navegar .icones a:hover{
+    img{
+        animation:translateY 0.8s infinite alternate;
+     } 
+}
+
+@keyframes translateY{
+    from{
+        transform: translateY(0) scale(1);
+    }
+    to{
+        transform: translate(-8px) scale(1.1);
+    }
+}
+
+/*--------------------------------------------------------*/
+
+
+.navegar .logo h2{
+    margin-left: 200px;
+    font-family: 'Mulish', sem serifa;
+    font-size: 40px;
+    color:rgb(17, 75, 123)
+}
+
+/*---------------------*/
+.hero{
+    position: relative;
+    text-align: center;
+    padding: 100px 0px;
+    height: 640px;
+    background-image: linear-gradient(to bottom, rgb(254, 254, 255), rgb(122, 175, 218));
+}
+
+.text-button{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/*---ANIMAÇÃO*/
+.hero{
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.text-button a{
+    color:rgb(17, 75, 123)
+}
+
+/*CONTEUDO*/
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+
+
+.container .conteudo-imagem img{
+    width: 600px;
+    height: 500px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.container .conteudo-imagem:hover img{
+    transform: scale(1.1);
+}
+
+.container .conteudo-imagem .texto-imagem{
+    flex: 1;
+   
+  
+}
+
+.container .texto-imagem p{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align:justify;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
